@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+int main() {
+    
+    int i,n,sum,ln,fn,temp,count=0;
+    
+    printf("Enter a number:- ");
+    scanf("%d",&n);
+    temp=n;
+    while(n>0)
+    {
+        n=n/10;
+        count++;
+    }
+    
+    printf("\n count %d",count);
+    i=1;
+    
+    while(temp!=0)
+    {
+        if(i==1)
+        {
+            ln=temp%10;
+        }
+        else if(count==1){
+            fn=temp%10;
+        }
+        temp=temp/10;
+        i++;
+        count--;
+    }
+    
+    printf("\n First number:- %d",fn);
+     printf("\n Last number:- %d",ln);
+     
+     sum=fn+ln;
+     printf("\n Sum of first and last digit:- %d",sum);
+
+    return 0;
+}

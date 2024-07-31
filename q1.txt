@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+   
+   int i;
+   
+   i=97;
+   
+   do{
+       printf("\n %c",i);
+       i+=4;
+   }while(i<=121);
+
+    return 0;
+}
